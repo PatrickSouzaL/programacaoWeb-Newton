@@ -1,0 +1,212 @@
+/* Arquivo: styles.css */
+
+/* Reset básico para remover margens e paddings padrão */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif; /* Apenas para garantir a legibilidade */
+    background-color: rgb(15, 0, 40);
+    color: white;
+}
+
+/* Contêiner principal para centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(66, 2, 203, 0.7);
+    top: 0;
+    position: fixed;
+}
+
+header nav{
+    display: flex;
+    width: 50%;
+    padding: 20px 20px;
+}
+
+header nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+/* Estilos das seções principais */
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+
+main section{
+    width: 80%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 200px;
+}
+
+.hero-image img{
+    width: auto;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.hero-content{
+    width: 79%;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-content h1{
+    margin-bottom:10px;
+    font-size: 45px;
+}
+
+.hero-content h3{
+    margin-bottom:5px;
+    font-size: 25px;
+}
+
+
+.section-sobre{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px 0px;
+    margin-bottom: 10px;
+}
+
+.section-sobre h2{
+    padding-left: 20px;
+}
+.section-sobre p{
+    padding: 20px;
+    line-height:140%;
+}
+
+.section-projetos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.projetos-title{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.projetos-content{
+    padding-left: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.projeto-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
+.projeto-card a{
+    text-decoration: none;
+    color: white;
+}
+
+.section-contato{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.section-contato p{
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+
+.section-contato address{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.section-contato h2{
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+.social-links{
+    padding: 10px;
+}
+
+.social-links a {
+    margin-left: 15px; /* Espaço entre os links de redes sociais */
+    color: white;
+}
