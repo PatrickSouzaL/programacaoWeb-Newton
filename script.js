@@ -4,7 +4,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // Inicializa o EmailJS com a sua Public Key
-    emailjs.init('8z5VSf_3fUN4x0ksn'); // <-- SUBSTITUA PELA SUA PUBLIC KEY
+    emailjs.init('xxxxxxxxxxxxxxxxxxx'); // <-- SUBSTITUA PELA SUA PUBLIC KEY
 
     const contactForm = document.getElementById('contact-form');
     const feedbackEl = document.getElementById('form-feedback');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         feedbackEl.style.display = 'block';
 
         // Envia o formulário usando EmailJS
-        emailjs.sendForm('service_o8kdccg', 'template_6eq3hr7', this)
+        emailjs.sendForm('xxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxx', this)
             .then(function (response) {
                 // Executado em caso de SUCESSO
                 console.log('SUCCESS!', response.status, response.text);
