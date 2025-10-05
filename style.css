@@ -173,18 +173,76 @@ main section{
     padding-top: 10px;
     
 }
-
-.section-contato address{
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 15px;
+/* === ESTILOS DO FORMULÁRIO DE CONTATO === */
+.section-contato {
+    padding: 20px; /* Adicionado para dar espaço interno */
 }
 
-.section-contato h2{
-    padding-left: 20px;
-    padding-top: 10px;
-    
+.section-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os grupos do formulário */
+    margin-top: 20px;
 }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px;
+}
+
+.submit-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4202cb; /* Cor primária do header */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #5a29d1;
+}
+
+/* Estilos para as mensagens de feedback */
+#form-feedback {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none; /* Escondido por padrão */
+}
+
+#form-feedback.success {
+    background-color: #28a745; /* Verde */
+    color: white;
+    display: block;
+}
+
+#form-feedback.error {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+    display: block;
+}
+
+/****************************/
 
 footer{
     width: 100%;
